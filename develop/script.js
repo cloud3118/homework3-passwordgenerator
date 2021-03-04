@@ -23,12 +23,15 @@ function generatePassword() {
 
   //setting up prompts for input
 
-  var charLength = prompt("How Many Characters Do You Want Your Password to Be?\n(Between 8-128)");
-  if (charLength >= 8 && charLength <= 128) {
-    passLength = charLength.number;
-  } else {
-    alert("Try Again!")
+  var charLength = parseInt(prompt("How Many Characters Do You Want Your Password to Be?\n(Between 8-128)"));
+   if (charLength >=8 && charLength <=128){
+   passLength = charLength;
   }
+  else {
+    alert("Try Again");
+  }
+
+
 
   var promptNumber = confirm("Include Numbers?");
   var promptUpperCase = confirm("Include Upper Case Letters?");
