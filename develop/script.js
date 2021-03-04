@@ -25,19 +25,20 @@ function generatePassword() {
 
   var charLength = prompt("How Many Characters Do You Want Your Password to Be?\n(Between 8-128)");
   if (charLength >= 8 && charLength <= 128) {
-    console.log("Yes")    
+    passLength = charLength.number;
   } else {
-    console.log("No")
+    alert("Try Again!")
   }
 
-  // var promptNumber = confirm("Include Numbers?");
-  // var promptUpperCase = confirm("Include Upper Case Letters?");
-  // var promptLowerCase = confirm("Include Lower Case Letters?");
-  // var promptSymbol = confirm("Include Symbols?");
+  var promptNumber = confirm("Include Numbers?");
+  var promptUpperCase = confirm("Include Upper Case Letters?");
+  var promptLowerCase = confirm("Include Lower Case Letters?");
+  var promptSymbol = confirm("Include Symbols?");
 
 
 
   return finalPassword;
+
 }
 
 // Add event listener to generate button
