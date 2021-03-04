@@ -19,14 +19,23 @@ function writePassword() {
 
 function generatePassword() {
   var finalPassword = "";
+  var allowedChars = "";
 
   //setting up prompts for input
 
-  var charLength = prompt("How Many Characters Do You Want Your Password to Be?");
-  var promptNumber = confirm("Include Numbers?");
-  var promptUpperCase = confirm("Include Upper Case Letters?");
-  var promptLowerCase = confirm("Include Lower Case Letters?");
-  var promptSymbol = confirm("Include Symbols?");
+  var charLength = prompt("How Many Characters Do You Want Your Password to Be?\n(Between 8-128)");
+  if (charLength >= 8 && charLength <= 128) {
+    console.log("Yes")    
+  } else {
+    console.log("No")
+  }
+
+  // var promptNumber = confirm("Include Numbers?");
+  // var promptUpperCase = confirm("Include Upper Case Letters?");
+  // var promptLowerCase = confirm("Include Lower Case Letters?");
+  // var promptSymbol = confirm("Include Symbols?");
+
+
 
   return finalPassword;
 }
