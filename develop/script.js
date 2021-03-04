@@ -29,6 +29,7 @@ function generatePassword() {
   }
   else {
     alert("Try Again");
+    return;
   }
 
 
