@@ -1,11 +1,9 @@
-// Variable Arrays
-var number = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
-
-var upperCase = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
-
-var lowerCase = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
-
-var specialChar = ["~", "!", "@", "#", "$", "%", "^", "&", "*", "-", "+", "="]
+// Character Variables
+var passLength = "";
+var number = "0123456789";
+var upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+var lowerCase = "abcdefghijklmnopqrstuvwxyz";
+var symbol = "~!@#$%^&*_+=";
 
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
@@ -21,6 +19,14 @@ function writePassword() {
 
 function generatePassword() {
   var finalPassword = "";
+
+  //setting up prompts for input
+
+  var charLength = prompt("How Many Characters Do You Want Your Password to Be?");
+  var promptNumber = confirm("Include Numbers?");
+  var promptUpperCase = confirm("Include Upper Case Letters?");
+  var promptLowerCase = confirm("Include Lower Case Letters?");
+  var promptSymbol = confirm("Include Symbols?");
 
   return finalPassword;
 }
