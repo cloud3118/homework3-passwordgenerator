@@ -61,7 +61,7 @@ function generatePassword() {
   //Loop to grab random characters
 
   for (let i = 0; i < charLength; i++) {
-    var randChar = allowedChars[Math.floor(Math.random() * charLength)]
+    let randChar = allowedChars[Math.floor(Math.random() * allowedChars.length)]
     console.log(randChar);    
   }
 
