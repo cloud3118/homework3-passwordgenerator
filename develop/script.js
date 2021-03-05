@@ -29,12 +29,13 @@ function generatePassword() {
    console.log(charLength);
    }
   else {
-    alert("Try Again");
-    return;
+    alert("Character Length Requirements Not Met");
+    return("Start Over by Clicking 'Generate Password'");
   }
   
   var promptNumber = confirm("Include Numbers?");
   if (promptNumber === true) {
+    allowedChars +- number;
     console.log("including numbers");
   }
 
