@@ -32,28 +32,31 @@ function generatePassword() {
     alert("Character Length Requirements Not Met");
     return("Start Over by Clicking 'Generate Password'");
   }
-  
+
   var promptNumber = confirm("Include Numbers?");
-  if (promptNumber === true) {
-    allowedChars +- number;
-    console.log("including numbers");
+  if (promptNumber) {
+    allowedChars += number;
+    
   }
 
   var promptUpperCase = confirm("Include Upper Case Letters?");
   if (promptUpperCase) {
-    console.log("including Upper Case");
+    allowedChars += upperCase;
+    
   }
   
   var promptLowerCase = confirm("Include Lower Case Letters?");
   if (promptLowerCase) {
-    console.log("including lower case");
+    allowedChars += lowerCase;
+    
   }
   
   var promptSymbol = confirm("Include Symbols?");
   if (promptSymbol) {
-    console.log("including symbols");
-  }
-
+    allowedChars += symbol;
+    
+  } 
+  console.log(allowedChars);
 
   return finalPassword;
 
