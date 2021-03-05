@@ -26,8 +26,9 @@ function generatePassword() {
   var charLength = parseInt(prompt("How Many Characters Do You Want Your Password to Be?\n(Between 8-128)"));
    if (charLength >=8 && charLength <=128){
    passLength = charLength;
-   console.log(charLength);
+   
    }
+
   else {
     alert("Character Length Requirements Not Met");
     return("Start Over by Clicking 'Generate Password'");
@@ -56,7 +57,13 @@ function generatePassword() {
     allowedChars += symbol;
     
   } 
-  console.log(allowedChars);
+  
+  //Loop to grab random characters
+
+  for (let i = 0; i < charLength; i++) {
+    var randChar = allowedChars[Math.floor(Math.random() * charLength)]
+    console.log(randChar);    
+  }
 
   return finalPassword;
 
