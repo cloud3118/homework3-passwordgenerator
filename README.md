@@ -15,7 +15,7 @@ Here was my thought process on accomplishing this objective:
 4. I inserted if/else logic with the prompt/confirms so that I would get a valid response, as well as add the confirmed responses to my randChar variable
 5. I created a loop so that I could grab characters at random and build out my password
 6. Once my password was complete, I passed that into a final password, which is then displayed on the page
-
+```
 
 ## Acceptance Criteria I followed
 
@@ -41,7 +41,7 @@ THEN the password is either displayed in an alert or written to the page
 
 ![My Password Generator](./assets/images/finished_product_casey.png)
 
-![The Password Generator application displays a red button to "Generate Password".](./Assets/03-javascript-homework-demo.png)
+[GitHub Site](https://cloud3118.github.io/homework3-passwordgenerator/)
 
 ## Grading Requirements
 
