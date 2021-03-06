@@ -39,7 +39,7 @@ THEN the password is either displayed in an alert or written to the page
 
 ## Website Link/Screenshot
 
-
+![My Password Generator](./assets/images/finished_product_casey.png)
 
 ![The Password Generator application displays a red button to "Generate Password".](./Assets/03-javascript-homework-demo.png)
 
